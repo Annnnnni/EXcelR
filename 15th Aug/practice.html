@@ -6,8 +6,8 @@
     <title>Document</title>
     <style>
         .bx{
-            height: 100px;
-            width: 100px;
+            height: 50px;
+            width: 50px;
             background-color: red;
             border-radius: 5px;
             position: absolute;
@@ -15,29 +15,29 @@
         @keyframes anim{
             0%{
         transform: translatex(0px);
-        border-radius: 50% 5px 5px 5px;
+        border-radius: 25% 5px 35px 5px;
      }
      25%{
         transform: translatex(300px);
         background-color: blue;
-        border-radius: 5px 50% 5px 5px;
+        border-radius: 5px 35% 5px 5px;
     }
     50%{
         transform: translatey(300px)translatex(300px);
         background-color: rgb(255, 0, 251);
-        border-radius: 5px 5px 50% 5px;
+        border-radius: 5px 5px 35% 5px;
     }
     75%{
         transform: translatex(0px) translatey(300px) translatey(0px);
         background-color: blue;
-        border-radius: 5px 5px 5px 50%;
+        border-radius: 5px 5px 5px 35%;
     }
     100%{
         transform: translatex(0px);
-        border-radius: 50% 5px 5px 5px;
+        border-radius: 35% 5px 5px 5px;
     }
-        }
-    .bx1{
+}
+.bx1{
         animation: anim 2s linear infinite;
     }
     .bx2{
