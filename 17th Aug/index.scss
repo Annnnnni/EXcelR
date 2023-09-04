@@ -1,0 +1,11 @@
+$column:5;
+@for $i from 1 through $column{
+    .bx-#{$i}{
+        width: (400px/$i);
+        border: 2px solid red;
+
+    }
+}
+.bx-1{
+    background-color: red($color: #fe0000);
+}

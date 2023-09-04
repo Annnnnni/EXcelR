@@ -1,0 +1,75 @@
+@media screen and (max-with:320px){
+    .responsive{
+        background-color: blue;
+    }
+
+    
+}
+body{
+    align-items: center;
+}
+.responsive{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 11px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+
+}
+.responsive{
+    animation: moveToRight 5s linear infinite;
+   /*  background-color: red;
+    color: antiquewhite;
+    transform: scale(1.1);
+    transition: 500ms linear;
+    transition-delay: 1s;
+    transition-duration: 2s; */
+} 
+@keyframes moveToRight{
+    0%{
+        transform: translatex(0px);
+    }
+     25%{
+        transform: translatex(300px);
+        background-color: blue;
+    }
+    50%{
+        transform: translatey(300px)translatex(300px);
+        background-color: rgb(255, 0, 251);
+    }
+    75%{
+        transform: translatex(0px) translatey(300px) translatey(0px);
+        background-color: blue;
+    }
+    100%{
+        transform: translatex(0px);
+    }
+}
+.grid{
+    background-color: aliceblue;
+    height: 690px;
+    width: 700px;
+    color: black;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    align-self: center;
+    border: 2px solid black;
+}
+div{
+    background-color: blue;
+    height: 1.8rem;
+    width: 1.8rem;
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid black;
+}
+.black{
+    background-color: black;
+}
+.white{
+    background-color:white;
+}

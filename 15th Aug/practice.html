@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bx{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 5px;
+            position: absolute;
+        }
+        @keyframes anim{
+            0%{
+        transform: translatex(0px);
+        border-radius: 50% 5px 5px 5px;
+     }
+     25%{
+        transform: translatex(300px);
+        background-color: blue;
+        border-radius: 5px 50% 5px 5px;
+    }
+    50%{
+        transform: translatey(300px)translatex(300px);
+        background-color: rgb(255, 0, 251);
+        border-radius: 5px 5px 50% 5px;
+    }
+    75%{
+        transform: translatex(0px) translatey(300px) translatey(0px);
+        background-color: blue;
+        border-radius: 5px 5px 5px 50%;
+    }
+    100%{
+        transform: translatex(0px);
+        border-radius: 50% 5px 5px 5px;
+    }
+        }
+    .bx1{
+        animation: anim 2s linear infinite;
+    }
+    .bx2{
+        animation: anim 2s linear infinite;
+        animation-delay: 50ms;
+    }
+    .bx3{
+        animation: anim 2s linear infinite;
+        animation-delay: 100ms;
+    }
+    .bx4{
+        animation: anim 2s linear infinite;
+        animation-delay: 150ms;
+    }
+    .bx5{
+        animation: anim 2s linear infinite;
+        animation-delay: 200ms;
+    }
+    .bx6{
+        animation: anim 2s linear infinite;
+        animation-delay: 250ms;
+    }
+    .bx7{
+        animation: anim 2s linear infinite;
+        animation-delay: 300ms;
+    }
+    .bx8{
+        animation: anim 2s linear infinite;
+        animation-delay: 350ms;
+    }
+    .bx9{
+        animation: anim 2s linear infinite;
+        animation-delay: 400ms;
+    }
+    .bx10{
+        animation: anim 2s linear infinite;
+        animation-delay: 450ms;
+    }
+    </style>
+</head>
+<body>
+    <div class="bx1 bx"></div>
+    <div class="bx2 bx"></div>
+    <div class="bx3 bx"></div>
+    <div class="bx4 bx"></div>
+    <div class="bx5 bx"></div>
+    <div class="bx6 bx"></div>
+    <div class="bx7 bx"></div>
+    <div class="bx8 bx"></div>
+    <div class="bx9 bx"></div>
+    <div class="bx10 bx"></div>
+</body>
+</html>
