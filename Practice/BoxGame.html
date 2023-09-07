@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- CSS -->
+<style>
+.bx{
+    height: 300px;
+    background-color: aqua;
+    width: 300px;
+    border-radius: 15px;
+    /* border: 2px solid red; */
+}
+
+@keyframes right {
+   100%{
+    transform: translateX(var(--right)px);
+   } 
+}
+@keyframes left {
+   100%{
+    transform: translateX(var(--left)px);
+   } 
+}
+@keyframes up {
+   100%{
+    transform: translatey(-50px);
+   } 
+}
+@keyframes down {
+   100%{
+    transform: translatey(var(--down)px);
+   } 
+}
+.btn{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.up{
+    margin-left: 40%;
+}
+.right{
+    margin-left: 85%;
+    margin-top: 75px;
+}
+.down{
+    margin-top: 75px;
+    margin-left: 40%;
+
+}
+.left{
+    margin-top: -175px;
+}
+</style>
+<!-- JS -->
+<script>
+    let up=0;
+    let right=0;
+    let down=0;
+    let left=0;
+
+function funcup(){
+    up-=50;
+    console.log("up button clicked")
+}
+function funcright(){
+    right+=50;
+    console.log("right button clicked")
+}
+function funcdown(){
+    down+=50;
+    console.log("down button clicked")
+}
+function funcleft(){
+    left-=50;
+    console.log("left button clicked")
+}
+</script>
+<body>
+    <div class="bx">
+        <div class="up btn" onclick="funcup()"></div>
+        <div class="right btn" onclick="funcright()"></div>
+        <div class="down btn" onclick="funcdown()"></div>
+        <div class="left btn" onclick="funcleft()"></div>
+    </div>
+</body>
+</html>
